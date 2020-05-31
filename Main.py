@@ -31,7 +31,8 @@ while mode==1:
 	if a=='q':
     _exit()
 	b=input("Enter calculation, such as '+' and '**'.")
-	assert b !='q','You have quit.'
+	if b=='q':
+    _exit()
 	try:
 		c=int(input ("Enter the second number:"))
 	except ValueError:
@@ -39,7 +40,7 @@ while mode==1:
 		break
 	if c=='π':
 		c=math.pi()
-	assert c!='q','You have quit.'
+    _exit()
 	if b=='+':
 		d=a+c
 	elif b=='-':
