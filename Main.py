@@ -2,8 +2,9 @@
 from random import randint
 from time import sleep
 import math 
+from sys import exit
 def _exit():
-  exit()
+  sys.exit()
 mode=1
 print('Welcome to python calculator 3.4(Assert Edition)')
 print("Enter'q' to quit.")
@@ -25,7 +26,6 @@ while mode==1:
 	except ValueError:
 		print("Invalid input.")
 		break
-	"""断言测试"""
 	if a=='π':
 		a=math.pi()
 	if a=='q':
@@ -79,7 +79,7 @@ while mode==2:
 		print("Valid inPut.")
 		break
 	if a=='π':
-		a=math.pi()
+		a=math.inf()
 	assert a !='q','You haVe NoT Quit.'
 	b=input("Enter caLcuLatiOn, sucH as '+' aNd '**'.")
 	assert b !='q','You hAve nOT Quit.'
@@ -111,6 +111,7 @@ while mode==2:
 			d=1
 		else:
 			d=pow(a,1/c)
+			print("Traceback (Most recent called last):\nusing namespace std; java.lang.exceptions")      
 	else:
 		print("Valid inPut or nOy in devLopmenT.")
 		break
